@@ -1,0 +1,50 @@
+{
+  "name": "ContactSubmission",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "inquiry_category": {
+      "type": "string",
+      "enum": [
+        "general_inquiry",
+        "partner_inquiry",
+        "referral_question",
+        "media_inquiry",
+        "other"
+      ],
+      "title": "Inquiry Category"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "read",
+        "responded",
+        "closed"
+      ],
+      "title": "Status",
+      "default": "new"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "message"
+  ]
+}

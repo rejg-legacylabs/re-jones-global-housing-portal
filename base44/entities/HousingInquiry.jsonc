@@ -1,0 +1,85 @@
+{
+  "name": "HousingInquiry",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "inquiry_type": {
+      "type": "string",
+      "enum": [
+        "individual",
+        "referral_for_someone",
+        "organization_referral"
+      ],
+      "title": "Inquiry Type"
+    },
+    "current_housing_situation": {
+      "type": "string",
+      "title": "Current Housing Situation"
+    },
+    "referral_source": {
+      "type": "string",
+      "title": "Referral Source"
+    },
+    "program_interest": {
+      "type": "string",
+      "enum": [
+        "transitional_housing",
+        "housing_stabilization",
+        "structured_living",
+        "not_sure"
+      ],
+      "title": "Program Interest"
+    },
+    "summary_of_need": {
+      "type": "string",
+      "title": "Summary of Need"
+    },
+    "organization_name": {
+      "type": "string",
+      "title": "Organization Name"
+    },
+    "organization_contact": {
+      "type": "string",
+      "title": "Organization Contact Person"
+    },
+    "organization_phone": {
+      "type": "string",
+      "title": "Organization Phone"
+    },
+    "consent_to_contact": {
+      "type": "boolean",
+      "title": "Consent to Contact",
+      "default": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "under_review",
+        "approved",
+        "declined",
+        "closed"
+      ],
+      "title": "Status",
+      "default": "new"
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "inquiry_type",
+    "consent_to_contact"
+  ]
+}

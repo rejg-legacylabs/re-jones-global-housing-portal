@@ -1,0 +1,64 @@
+{
+  "name": "PartnerInquiry",
+  "type": "object",
+  "properties": {
+    "organization_name": {
+      "type": "string",
+      "title": "Organization Name"
+    },
+    "contact_name": {
+      "type": "string",
+      "title": "Contact Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "organization_type": {
+      "type": "string",
+      "enum": [
+        "nonprofit",
+        "government_agency",
+        "parole_probation",
+        "reentry_organization",
+        "healthcare_provider",
+        "faith_based",
+        "other"
+      ],
+      "title": "Organization Type"
+    },
+    "partnership_interest": {
+      "type": "string",
+      "title": "Partnership Interest"
+    },
+    "referral_volume_estimate": {
+      "type": "string",
+      "title": "Estimated Referral Volume"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "contacted",
+        "active_partner",
+        "declined"
+      ],
+      "title": "Status",
+      "default": "new"
+    }
+  },
+  "required": [
+    "organization_name",
+    "contact_name",
+    "email"
+  ]
+}

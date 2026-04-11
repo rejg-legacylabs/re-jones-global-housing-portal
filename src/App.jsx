@@ -5,7 +5,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
-// Add page imports here
+import PublicLayout from './components/layout/PublicLayout';
+import Home from './pages/Home';
+import About from './pages/About';
+import Programs from './pages/Programs';
+import WhoWeServe from './pages/WhoWeServe';
+import ReferralProcess from './pages/ReferralProcess';
+import Partners from './pages/Partners';
+import Apply from './pages/Apply';
+import Impact from './pages/Impact';
+import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -33,8 +43,19 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
-      {/* Add your page Route elements here */}
-      <Route path="*" element={<PageNotFound />} />
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/who-we-serve" element={<WhoWeServe />} />
+        <Route path="/referral-process" element={<ReferralProcess />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/apply" element={<Apply />} />
+        <Route path="/impact" element={<Impact />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Route>
     </Routes>
   );
 };
