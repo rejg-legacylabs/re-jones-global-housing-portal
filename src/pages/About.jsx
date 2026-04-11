@@ -3,7 +3,7 @@ import PageHero from "../components/shared/PageHero";
 import SectionHeading from "../components/shared/SectionHeading";
 import CTABanner from "../components/shared/CTABanner";
 
-const windowImage = "/__generating__/img_17e93842582b.png";
+const windowImage = "https://media.base44.com/images/public/69da98c225a706a681e19690/7be852296_generated_631015db.png";
 
 const values = [
   {

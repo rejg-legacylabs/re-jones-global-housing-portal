@@ -5,7 +5,7 @@ import PageHero from "../components/shared/PageHero";
 import SectionHeading from "../components/shared/SectionHeading";
 import CTABanner from "../components/shared/CTABanner";
 
-const doorImage = "/__generating__/img_f61e405c57e6.png";
+const doorImage = "https://media.base44.com/images/public/69da98c225a706a681e19690/5d6c24fb3_generated_1fad0980.png";
 
 const populations = [
   {

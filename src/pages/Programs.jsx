@@ -5,7 +5,7 @@ import PageHero from "../components/shared/PageHero";
 import SectionHeading from "../components/shared/SectionHeading";
 import CTABanner from "../components/shared/CTABanner";
 
-const communityImage = "/__generating__/img_636a65c06df5.png";
+const communityImage = "https://media.base44.com/images/public/69da98c225a706a681e19690/14bd431ee_generated_ab4b3b5d.png";
 
 const programs = [
   {

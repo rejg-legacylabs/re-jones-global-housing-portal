@@ -4,8 +4,8 @@ import { ArrowRight, Home as HomeIcon, Users, Handshake, Shield, Heart, Building
 import SectionHeading from "../components/shared/SectionHeading";
 import CTABanner from "../components/shared/CTABanner";
 
-const heroImage = "/__generating__/img_c1da4907cfec.png";
-const interiorImage = "/__generating__/img_7da064438ab1.png";
+const heroImage = "https://media.base44.com/images/public/69da98c225a706a681e19690/8193a4729_generated_4fbef46c.png";
+const interiorImage = "https://media.base44.com/images/public/69da98c225a706a681e19690/5db47d755_generated_6aa2a130.png";
 
 const gatewayCards = [
   {

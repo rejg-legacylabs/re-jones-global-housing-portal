@@ -3,7 +3,7 @@ import PageHero from "../components/shared/PageHero";
 import SectionHeading from "../components/shared/SectionHeading";
 import CTABanner from "../components/shared/CTABanner";
 
-const neighborhoodImage = "/__generating__/img_54ab6e7afc3c.png";
+const neighborhoodImage = "https://media.base44.com/images/public/69da98c225a706a681e19690/3c5c7d71f_generated_2157e05c.png";
 
 const stats = [
   { icon: Home, value: "85%", label: "Housing Stability Rate", description: "of residents maintain stable housing through program completion" },
