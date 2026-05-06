@@ -37,7 +37,16 @@ export default function Contact() {
       return;
     }
     setLoading(true);
-    await base44.entities.ContactSubmission.create(form);
+    const created = await base44.entities.ContactSubmission.create(form);
+    try {
+      await base44.functions.forwardLeadToOps({
+        source: "Contact",
+        record_id: created?.id,
+        fields: form,
+      });
+    } catch (err) {
+      console.error("forwardLeadToOps failed (non-blocking):", err);
+    }
     setLoading(false);
     setSubmitted(true);
     toast.success("Message sent successfully!");

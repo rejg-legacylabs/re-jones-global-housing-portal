@@ -59,7 +59,16 @@ export default function Partners() {
       return;
     }
     setLoading(true);
-    await base44.entities.PartnerInquiry.create(form);
+    const created = await base44.entities.PartnerInquiry.create(form);
+    try {
+      await base44.functions.forwardLeadToOps({
+        source: "Partners",
+        record_id: created?.id,
+        fields: form,
+      });
+    } catch (err) {
+      console.error("forwardLeadToOps failed (non-blocking):", err);
+    }
     setLoading(false);
     setSubmitted(true);
     toast.success("Partnership inquiry submitted successfully!");
