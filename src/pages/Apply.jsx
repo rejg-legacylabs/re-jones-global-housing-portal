@@ -56,7 +56,17 @@ export default function Apply() {
       return;
     }
     setLoading(true);
-    await base44.entities.HousingInquiry.create(form);
+    const created = await base44.entities.HousingInquiry.create(form);
+    // Forward to legacy-properties ops app (failures are queued + audited server-side)
+    try {
+      await base44.functions.forwardLeadToOps({
+        source: "Apply",
+        record_id: created?.id,
+        fields: form,
+      });
+    } catch (err) {
+      console.error("forwardLeadToOps failed (non-blocking):", err);
+    }
     setLoading(false);
     setSubmitted(true);
     toast.success("Housing inquiry submitted successfully!");
