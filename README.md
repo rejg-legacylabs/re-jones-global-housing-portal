@@ -1,39 +1,34 @@
-**Welcome to your Base44 project** 
+# REJG Legacy Properties — Housing Website
 
-**About**
+**Public-facing website for REJG Legacy Properties LLC**
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+The REJG Legacy Properties Housing Website is the public digital presence for REJG Legacy Properties — a professional transitional housing company providing structured, drug- and alcohol-free housing for individuals re-entering the community.
 
-This project contains everything you need to run your app locally.
+## Company Info
+- **Legal Name:** REJG Legacy Properties LLC
+- **Parent:** RE Jones Global LLC
+- **Contact:** rodney@rejonesglobal.com | 512-541-2395
+- **Address:** 5900 Balcones Drive, Suite 100, Austin, TX 78731
 
-**Edit the code in your local development environment**
+## Platform Features
+- Public property and bed availability listings
+- Agency and referral partner intake forms
+- Housing application portal (feeds into REJG Legacy Properties Housing App)
+- Outside client onboarding (government agencies, courts, treatment programs, other nonprofits)
+- Program information and eligibility requirements
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+## Ecosystem Connection
+- Website inquiries/leads → REJG Legacy Properties Housing App
+- HOH resident referrals coordinated via Pathways Hub OS
 
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
-
+## Development
+```bash
+git clone https://github.com/rejg-legacylabs/re-jones-global-housing-portal
+cd re-jones-global-housing-portal
+npm install
+cp .env.example .env.local
+npm run dev
 ```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
-
-Run the app: `npm run dev`
-
-**Publish your changes**
-
-Open [Base44.com](http://Base44.com) and click on Publish.
-
-**Docs & Support**
-
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+---
+Built on [Base44](https://base44.com) | REJG Legacy Properties LLC | REJG Legacy Labs LLC | RE Jones Global LLC | May 2026
