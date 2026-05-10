@@ -7,18 +7,19 @@ The REJG Legacy Properties Housing Website is the public digital presence for RE
 ## Company Info
 - **Legal Name:** REJG Legacy Properties LLC
 - **Parent:** RE Jones Global LLC
-- **Contact:** rodney@rejonesglobal.com | 512-541-2395
+- **Email:** rejglegacyproperties@gmail.com
+- **Phone:** 512-541-2395
 - **Address:** 5900 Balcones Drive, Suite 100, Austin, TX 78731
 
 ## Platform Features
 - Public property and bed availability listings
 - Agency and referral partner intake forms
 - Housing application portal (feeds into REJG Legacy Properties Housing App)
-- Outside client onboarding (government agencies, courts, treatment programs, other nonprofits)
+- Outside client onboarding (government agencies, courts, treatment programs)
 - Program information and eligibility requirements
 
 ## Ecosystem Connection
-- Website inquiries/leads → REJG Legacy Properties Housing App
+- Website inquiries → REJG Legacy Properties Housing App
 - HOH resident referrals coordinated via Pathways Hub OS
 
 ## Development
