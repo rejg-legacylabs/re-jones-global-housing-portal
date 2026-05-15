@@ -25,7 +25,7 @@ const gatewayCards = [
   {
     icon: Handshake,
     title: "Partner With Us",
-    description: "Organizations interested in becoming referral partners can learn about our partnership process.",
+    description: "Courts, treatment programs, nonprofits, and agencies can become referral partners for priority bed access.",
     link: "/partners",
     linkLabel: "Become a Partner",
   },
@@ -34,8 +34,8 @@ const gatewayCards = [
 const pillars = [
   {
     icon: Shield,
-    title: "Safe, Structured Housing",
-    description: "Our housing environments are built around structure, accountability, and respect — providing the stability needed to rebuild.",
+    title: "100% Drug & Alcohol Free",
+    description: "Every REJG Legacy Properties home is a structured, sober environment built around accountability, house rules, and mutual respect.",
   },
   {
     icon: Heart,
@@ -61,14 +61,17 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
           <div className="max-w-2xl">
             <span className="inline-block text-xs font-body font-semibold tracking-widest uppercase text-accent mb-4">
-              RE Jones Global Housing
+              REJG Legacy Properties — A RE Jones Global LLC Company
             </span>
             <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-6">
               Dignity Begins<br />
               <span className="text-accent">with a Door.</span>
             </h1>
-            <p className="text-lg lg:text-xl text-primary-foreground/80 leading-relaxed mb-10 max-w-xl">
-              RE Jones Global provides structured, supportive housing for individuals rebuilding their lives — because stable housing is the first step toward lasting change.
+            <p className="text-lg lg:text-xl text-primary-foreground/80 leading-relaxed mb-4 max-w-xl">
+              REJG Legacy Properties provides 100% drug and alcohol free structured housing for justice-impacted individuals, homeless veterans, and turned-out foster youth across Austin, Texas.
+            </p>
+            <p className="text-sm text-primary-foreground/60 leading-relaxed mb-10 max-w-xl">
+              Stable housing is the first step toward lasting change. We provide the foundation — structure, accountability, and dignity — for people ready to rebuild their lives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/apply">
@@ -77,11 +80,25 @@ export default function Home() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <Link to="/about">
+              <Link to="/partners">
                 <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-body font-semibold text-sm tracking-wide uppercase px-8 w-full sm:w-auto">
-                  Learn More
+                  Partner With Us
                 </Button>
               </Link>
+            </div>
+            <div className="flex gap-6 mt-8 flex-wrap">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-accent">100%</div>
+                <div className="text-xs text-primary-foreground/50 uppercase tracking-wider">Drug & Alcohol Free</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-accent">Austin</div>
+                <div className="text-xs text-primary-foreground/50 uppercase tracking-wider">Texas Based</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-accent">737-999-0256</div>
+                <div className="text-xs text-primary-foreground/50 uppercase tracking-wider">Direct Line</div>
+              </div>
             </div>
           </div>
         </div>
@@ -116,8 +133,8 @@ export default function Home() {
           <div>
             <SectionHeading
               label="What We Do"
-              title="Structured Housing for People Rebuilding Their Lives"
-              description="RE Jones Global Housing provides safe, structured living environments for individuals transitioning from instability to self-sufficiency. Our housing is more than a roof — it is the foundation upon which lives are rebuilt."
+              title="Structured Sober Housing for People Rebuilding Their Lives"
+              description="REJG Legacy Properties provides 100% drug and alcohol free structured living environments for individuals transitioning from instability to self-sufficiency. Our housing is more than a roof — it is the foundation upon which lives are rebuilt."
               centered={false}
             />
             <div className="space-y-4">
@@ -151,14 +168,14 @@ export default function Home() {
           <SectionHeading
             label="Who We Serve"
             title="Housing for Those Working Toward Stability"
-            description="Our housing services are designed for individuals who are actively working to rebuild their lives — people referred through community organizations, reentry programs, and social service agencies."
+            description="REJG Legacy Properties serves individuals referred through courts, treatment programs, nonprofits, and social service agencies across Central Texas."
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {[
-              "Justice-impacted individuals seeking stable housing",
-              "People transitioning from shelters or temporary housing",
-              "Individuals referred through approved community organizations",
-              "People actively working toward employment and self-sufficiency"
+              "Justice-impacted individuals seeking stable, sober housing",
+              "Homeless veterans needing structured transitional housing",
+              "Turned-out foster youth aging out of the system",
+              "Individuals referred through courts, probation, or treatment programs"
             ].map((item, i) => (
               <div key={i} className="bg-card border border-border rounded-lg p-6 border-l-4 border-l-accent">
                 <p className="text-sm text-foreground font-medium leading-relaxed">{item}</p>
@@ -176,34 +193,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Referral Process Preview */}
+      {/* Partner Organizations */}
       <section className="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          label="How It Works"
-          title="The Path to Housing Placement"
-          description="Our referral and placement process is structured to ensure the right fit for every individual. Here's an overview of how it works."
+          label="Referral Partners"
+          title="Who Can Refer to REJG Legacy Properties"
+          description="We work with courts, treatment programs, probation, nonprofits, and VA services to place individuals quickly and professionally."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {[
-            { step: "01", title: "Inquiry or Referral", desc: "Individuals or organizations submit a housing inquiry or referral through our intake process." },
-            { step: "02", title: "Internal Review", desc: "Our team reviews every submission to evaluate need, fit, and current availability." },
-            { step: "03", title: "Assessment & Interview", desc: "Qualified applicants are invited for a suitability assessment and interview." },
-            { step: "04", title: "Placement Decision", desc: "Placement decisions are made based on fit, readiness, and available housing." },
-          ].map((item) => (
-            <div key={item.step} className="relative">
-              <span className="text-5xl font-heading font-bold text-accent/20 mb-2 block">{item.step}</span>
-              <h4 className="font-heading font-semibold text-base text-foreground mb-2">{item.title}</h4>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+            { org: "Travis County Pretrial Services", type: "Court / Pretrial" },
+            { org: "Integral Care", type: "Mental Health Authority" },
+            { org: "Austin Recovery Network", type: "Recovery Services" },
+            { org: "CommUnity Care", type: "Community Health" },
+            { org: "VA HUD-VASH", type: "Veteran Services" },
+            { org: "Probation & Parole Offices", type: "Supervision" },
+          ].map((p) => (
+            <div key={p.org} className="bg-card border border-border rounded-lg p-5 flex items-center gap-4">
+              <div className="w-8 h-8 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
+                <span className="text-accent font-bold text-sm">✓</span>
+              </div>
+              <div>
+                <div className="font-semibold text-foreground text-sm">{p.org}</div>
+                <div className="text-xs text-muted-foreground">{p.type}</div>
+              </div>
             </div>
           ))}
         </div>
-        <div className="text-center mt-12">
-          <Link to="/referral-process">
-            <Button variant="outline" className="font-body font-semibold text-sm tracking-wide uppercase gap-2">
-              Full Referral Process
+        <div className="text-center mt-10">
+          <Link to="/partners">
+            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold text-sm tracking-wide uppercase gap-2 px-8">
+              Become a Referral Partner
               <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>
+        </div>
+      </section>
+
+      {/* Referral Process Preview */}
+      <section className="bg-muted py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            label="How It Works"
+            title="The Path to Housing Placement"
+            description="Our referral and placement process is structured to ensure the right fit for every individual."
+          />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            {[
+              { step: "01", title: "Inquiry or Referral", desc: "Individuals or organizations submit a housing inquiry or referral through our intake process." },
+              { step: "02", title: "Internal Review", desc: "Our team reviews every submission to evaluate need, fit, and current availability." },
+              { step: "03", title: "Assessment & Interview", desc: "Qualified applicants are invited for a suitability assessment and interview." },
+              { step: "04", title: "Placement Decision", desc: "Placement decisions are made based on fit, readiness, and available housing." },
+            ].map((item) => (
+              <div key={item.step} className="relative">
+                <span className="text-5xl font-heading font-bold text-accent/20 mb-2 block">{item.step}</span>
+                <h4 className="font-heading font-semibold text-base text-foreground mb-2">{item.title}</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link to="/referral-process">
+              <Button variant="outline" className="font-body font-semibold text-sm tracking-wide uppercase gap-2">
+                Full Referral Process
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -213,7 +269,7 @@ export default function Home() {
           <SectionHeading
             label="Why It Matters"
             title="Housing Stability Changes Everything"
-            description="When people have a safe, stable place to live, every other part of their life improves. Employment becomes possible. Recovery has a foundation. Families can reconnect. Communities grow stronger."
+            description="When people have a safe, stable, sober place to live, every other part of their life improves. Employment becomes possible. Recovery has a foundation. Families can reconnect. Communities grow stronger."
             light
           />
           <div className="grid sm:grid-cols-3 gap-8 mt-8 text-center">
@@ -227,6 +283,20 @@ export default function Home() {
                 <p className="text-sm text-primary-foreground/70 leading-relaxed max-w-xs mx-auto">{item.label}</p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <div className="inline-flex flex-col sm:flex-row gap-3">
+              <a href="tel:7379990256">
+                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold text-sm tracking-wide uppercase px-8 gap-2">
+                  Call 737-999-0256
+                </Button>
+              </a>
+              <a href="mailto:rejglegacyproperties@gmail.com">
+                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-body font-semibold text-sm tracking-wide uppercase px-8">
+                  Email Us
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
