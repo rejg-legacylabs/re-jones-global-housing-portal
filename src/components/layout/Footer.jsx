@@ -23,15 +23,15 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-sm bg-accent flex items-center justify-center">
-                <span className="font-heading font-bold text-accent-foreground text-base">RE</span>
+                <span className="font-heading font-bold text-accent-foreground text-base">RP</span>
               </div>
               <div className="leading-tight">
-                <span className="font-heading font-semibold text-base tracking-wide">RE Jones Global</span>
-                <span className="block text-xs text-primary-foreground/70 tracking-widest uppercase">Housing</span>
+                <span className="font-heading font-semibold text-base tracking-wide">REJG Legacy Properties</span>
+                <span className="block text-xs text-primary-foreground/70 tracking-widest uppercase">A RE Jones Global LLC Company</span>
               </div>
             </div>
             <p className="text-sm text-primary-foreground/70 leading-relaxed max-w-xs">
-              Providing structured, supportive housing pathways for individuals working to rebuild stability and move forward with dignity.
+              100% drug and alcohol free structured housing for justice-impacted individuals, homeless veterans, and turned-out foster youth across Austin, Texas.
             </p>
           </div>
 
@@ -64,22 +64,23 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-semibold text-sm tracking-widest uppercase text-accent mb-5">Contact</h4>
             <div className="space-y-3 text-sm text-primary-foreground/70">
-              <p>RE Jones Global Housing</p>
-              <p>
-                <Link to="/contact" className="hover:text-accent transition-colors">
-                  Send us a message →
-                </Link>
-              </p>
+              <p className="font-semibold text-primary-foreground">REJG Legacy Properties</p>
+              <p>Austin, Texas</p>
+              <a href="tel:7379990256" className="block hover:text-accent transition-colors font-semibold">📞 737-999-0256</a>
+              <a href="mailto:rejglegacyproperties@gmail.com" className="block hover:text-accent transition-colors text-xs break-all">rejglegacyproperties@gmail.com</a>
+              <Link to="/contact" className="block hover:text-accent transition-colors mt-2">
+                Send us a message →
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-primary-foreground/50">
-            © {new Date().getFullYear()} RE Jones Global. All rights reserved.
+            © {new Date().getFullYear()} REJG Legacy Properties | A RE Jones Global LLC Company | All rights reserved.
           </p>
           <p className="text-xs text-primary-foreground/50">
-            Structured Housing. Restored Dignity. Stronger Communities.
+            100% Drug & Alcohol Free · Structured Housing · Restored Dignity · Stronger Communities
           </p>
         </div>
       </div>
