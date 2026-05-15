@@ -24,11 +24,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-3 shrink-0" onClick={() => setOpen(false)}>
             <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-sm bg-accent flex items-center justify-center">
-              <span className="font-heading font-bold text-accent-foreground text-sm lg:text-base">RE</span>
+              <span className="font-heading font-bold text-accent-foreground text-sm lg:text-base">RP</span>
             </div>
             <div className="leading-tight">
-              <span className="font-heading font-semibold text-sm lg:text-base tracking-wide">RE Jones Global</span>
-              <span className="block text-[10px] lg:text-xs text-primary-foreground/70 tracking-widest uppercase">Housing</span>
+              <span className="font-heading font-semibold text-sm lg:text-base tracking-wide">REJG Legacy Properties</span>
+              <span className="block text-[10px] lg:text-xs text-primary-foreground/70 tracking-widest uppercase">A RE Jones Global LLC Company</span>
             </div>
           </Link>
 
